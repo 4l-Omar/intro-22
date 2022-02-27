@@ -1,11 +1,12 @@
 # frozen_string_literal: true
+
 require 'calculator'
 
 describe Calculator do
   subject(:calc) { described_class.new }
   context 'somar' do
     it 'com números positivos' do
-      result = calc.somar(3,2)
+      result = calc.somar(3, 2)
       expect(result).to eq(5)
     end
     it 'com números positivos e negativos' do
@@ -23,7 +24,7 @@ describe Calculator do
   end
   context 'subtrair' do
     it 'com números positivos' do
-      result = calc.subtrair(3,2)
+      result = calc.subtrair(3, 2)
       expect(result).to eq(1)
     end
     it 'com números positivos e negativos' do
@@ -41,7 +42,7 @@ describe Calculator do
   end
   context 'multiplicar' do
     it 'com números positivos' do
-      result = calc.multiplicar(4,2)
+      result = calc.multiplicar(4, 2)
       expect(result).to eq(8)
     end
     it 'com números positivos e negativos' do
@@ -59,7 +60,7 @@ describe Calculator do
   end
   context 'dividir' do
     it 'com números positivos' do
-      result = calc.dividir(4,2)
+      result = calc.dividir(4, 2)
       expect(result).to eq(2)
     end
     it 'com números positivos e negativos' do
@@ -74,10 +75,10 @@ describe Calculator do
       result = calc.dividir(1, 1)
       expect(result).to eq(1)
     end
-  end      
+  end
   context 'modulo' do
     it 'com números positivos' do
-      result = calc.modulo(5,2)
+      result = calc.modulo(5, 2)
       expect(result).to eq(1)
     end
     it 'com números positivos e negativos' do
@@ -92,10 +93,10 @@ describe Calculator do
       result = calc.modulo(1, 1)
       expect(result).to eq(0)
     end
-  end      
+  end
   context 'expoente' do
     it 'com números positivos' do
-      result = calc.expoente(4,2)
+      result = calc.expoente(4, 2)
       expect(result).to eq(16)
     end
     it 'com números positivos e negativos' do
@@ -110,6 +111,5 @@ describe Calculator do
       result = calc.expoente(1, 1)
       expect(result).to eq(1)
     end
-  end      
-  
+  end
 end
