@@ -12,5 +12,13 @@ class Calculator
     def dividir(numero1,numero2)
         numero1 / numero2
     end
+
+    def modulo(numero1,numero2)
+        numero1 % numero2
+    end
+
+    def expoente(numero1,numero2)
+        numero1 ** numero2
+    end
     
 end
